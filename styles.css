@@ -8,6 +8,10 @@
     src: url('./ChakraPetch-Regular.ttf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -153,11 +157,32 @@ header nav ul li button:hover {
     font-size: 1.2rem;
 }
 
+#contact ul li a {
+    color: #ffcc00; /* 链接文字的颜色 */
+    text-decoration: none; /* 去掉默认下划线 */
+    font-weight: bold; /* 加粗文字 */
+    font-size: 1.2rem; /* 调整文字大小 */
+    padding: 10px 15px; /* 添加内边距 */
+    background-color: rgba(0, 0, 0, 0.7); /* 添加背景色 */
+    border-radius: 5px; /* 圆角 */
+    display: inline-block; /* 让链接支持边框和内边距 */
+    transition: all 0.3s ease; /* 添加动画过渡 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+}
+
+#contact ul li a:hover {
+    background-color: #ffcc00; /* 鼠标悬停时改变背景色 */
+    color: #000; /* 鼠标悬停时改变文字颜色 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* 增强悬停时的阴影效果 */
+    transform: translateY(-3px); /* 鼠标悬停时轻微向上移动 */
+}
+
 footer {
-    color: #fff;
+    font-family: 'Regular', sans-serif;
+    /* color: #fff; */
     text-align: center;
     padding: 20px 0;
-    background: url('bg0.png') no-repeat center center/cover;
+    /* background: url('bg0.png') no-repeat center center/cover; */
     font-size: 0.9rem;
 }
 
