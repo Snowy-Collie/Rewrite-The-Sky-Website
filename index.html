@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewrite The Sky - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rewrite the Sky: ACSRS</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><button onclick="location.href='#about'">About</a></li>
+                    <li><button onclick="location.href='#features'">Features</a></li>
+                    <li><button onclick="location.href='#contact'">Contact</a></li>
+                    <li><button id="language-toggle">Chinese</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section" style="background: url('bg1.jpg') no-repeat center center/cover;">
+            <div class="container">
+                <h2>About ACSRS</h2>
+                <p class="en"><strong>Rewrite the Sky: ACSRS</strong> is an immersive aviation-themed interactive game developed by <strong>ACS Studio</strong>, set to release in <strong>September 2025</strong>. The game invites players to step into the world of aviation history, taking on critical roles to rewrite the outcomes of four significant aviation incidents. By engaging with these pivotal events, players will gain a deeper understanding of the factors behind these moments while striving to prevent the disasters from unfolding.</p>
+                <p class="zh hidden"><strong>Rewrite the Sky: ACSRS</strong> 是由 <strong>ACS Studio</strong> 开发的一款沉浸式航空主题互动游戏，计划于 <strong>2025 年 9 月</strong> 发布。游戏邀请玩家进入航空历史的世界，扮演关键角色，重新改写四个重大航空事件的结局。通过参与这些重要事件，玩家将更深入地了解这些时刻背后的因素，同时努力防止灾难的发生。</p>
+                <div class="video-container">
+                    <iframe 
+                        class="en"
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/dEe62gXSEGg?si=s6VrXblSHBitvXmf" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="zh hidden"
+                        src="//player.bilibili.com/player.html?isOutside=true&aid=113835994256229&bvid=BV1bDwGe5EpE&cid=27895598794&p=1" 
+                        scrolling="no" 
+                        border="0" 
+                        frameborder="no" 
+                        framespacing="0" 
+                        allowfullscreen="true">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section" style="background: rgba(255, 255, 255, 0.8);">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li class="en"><strong>Four Interactive Chapters:</strong> Experience aviation incidents inspired by real events, including the famous Gimli Glider and more.</li>
+                    <li class="zh hidden"><strong>四个互动章节：</strong> 体验由真实事件启发的航空事故，包括著名的加航 Gimli Glider 事故及其他事件。</li>
+                    <li class="en"><strong>Multiple Roles:</strong> Play as crew members, ground staff, and investigators, facing unique responsibilities and challenges.</li>
+                    <li class="zh hidden"><strong>多重角色扮演：</strong> 玩家可扮演机组人员、地勤人员及调查员，体验各角色独特的责任与挑战。</li>
+                    <li class="en"><strong>Realistic Simulation:</strong> Highly detailed environments and cockpit operations replicate the complexity and tension of aviation events.</li>
+                    <li class="zh hidden"><strong>真实模拟：</strong> 逼真的游戏场景和仪表操作，呈现航空事件中的复杂性与紧张感。</li>
+                    <li class="en"><strong>Education Meets Entertainment:</strong> Learn aviation history and knowledge through engaging interactive narratives.</li>
+                    <li class="zh hidden"><strong>教育与娱乐结合：</strong> 游戏通过互动叙事，让玩家在娱乐中学习航空历史及相关知识。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section" style="background: url('bg2.jpg') no-repeat center center/cover;">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Email: <a href="mailto:contact@acsstudio.site">contact@acsstudio.site</a></li>
+                    <li>Discord: <a href="https://discord.com/invite/AK9B3Vfr56" target="_blank">Join our community</a></li>
+                    <li>YouTube: <a href="https://www.youtube.com/@studio-acs" target="_blank">@studio-acs</a></li>
+                    <li>Trailer: <a href="https://youtu.be/dEe62gXSEGg?si=GFJXP0rseNqzLtL8" target="_blank">Watch the Official Trailer</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: url('bg0.png') no-repeat center center/cover;">
+        <div class="container">
+            <p>&copy; 2023 - 2025 ACS Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('language-toggle').addEventListener('click', function () {
+            const isEnglish = this.textContent === 'English';
+            document.querySelectorAll('.en').forEach(el => el.classList.toggle('hidden', !isEnglish));
+            document.querySelectorAll('.zh').forEach(el => el.classList.toggle('hidden', isEnglish));
+            this.textContent = isEnglish ? 'Chinese' : 'English';
+        });
+    </script>
+</body>
+</html>

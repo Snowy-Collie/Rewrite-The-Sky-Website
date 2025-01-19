@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Bold';
+    src: url('./ChakraPetch-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('./ChakraPetch-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('bg0.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    /* top: 0; */
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Bold', sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a,
+header nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Regular', sans-serif;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.section {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#about {
+    background: url('bg1.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Regular', sans-serif;
+    font-size: 1.2rem;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Bold', sans-serif;
+}
+
+.video-container {
+    margin: 40px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#features{
+    font-family: 'Regular', sans-serif;
+}
+
+#features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Bold', sans-serif;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+}
+
+#features ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#contact {
+    background: url('bg2.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    font-family: 'Regular', sans-serif;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Bold', sans-serif;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background: url('bg0.png') no-repeat center center/cover;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none;
+}
