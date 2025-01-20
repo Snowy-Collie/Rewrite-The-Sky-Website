@@ -133,6 +133,7 @@ header nav ul li button:hover {
 }
  
 #chapters{
+    background: rgba(0, 0, 0, 0.8);
     font-family: 'Regular', sans-serif;
 }
 
@@ -140,6 +141,7 @@ header nav ul li button:hover {
     font-size: 2rem;
     margin-bottom: 20px;
     font-family: 'Bold', sans-serif;
+    color: #fff;
 }
 
 .group-container {
@@ -150,9 +152,9 @@ header nav ul li button:hover {
 }
 
 .group {
-    background: #fff;
+    background: #000000;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     overflow: hidden;
     width: 400px;
     text-align: left;
@@ -167,20 +169,20 @@ header nav ul li button:hover {
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 3px solid #eee;
+    border-bottom: 3px solid #010101;
 }
 
 .group h3 {
     padding: 15px;
     font-family: 'Bold', sans-serif;
-    color: #555;
+    color: #ccc;
     font-size: 1.5rem;
 }
 
 .group p {
     padding: 15px;
     font-family: 'Regular', sans-serif;
-    color: #555;
+    color: #ccc;
     font-size: 1.2rem;
 }
 
@@ -230,12 +232,14 @@ header nav ul li button:hover {
 }
 
 footer {
+    background: rgba(0, 0, 0, 0.8);
     font-family: 'Regular', sans-serif;
     /* color: #fff; */
     text-align: center;
     padding: 20px 0;
     /* background: url('bg0.png') no-repeat center center/cover; */
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: #fff;
 }
 
 .hidden {
