@@ -132,6 +132,58 @@ header nav ul li button:hover {
     font-size: 1.2rem;
 }
 
+#chapters{
+    font-family: 'Regular', sans-serif;
+}
+
+#chapters h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Bold', sans-serif;
+}
+
+.group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.group {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.group:hover {
+    transform: translateY(-5px);
+}
+
+.group img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #eee;
+}
+
+.group h3 {
+    padding: 15px;
+    font-family: 'Bold', sans-serif;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.group p {
+    padding: 15px;
+    font-family: 'Regular', sans-serif;
+    color: #555;
+    font-size: 1.2rem;
+}
+
 #contact {
     background: url('bg2.png') no-repeat center center/cover;
     color: #fff;
