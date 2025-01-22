@@ -112,8 +112,44 @@ header nav ul li button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+#demo {
+    background: url('bg1.png') no-repeat center center/cover;
+    color: #000;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Regular', sans-serif;
+    font-size: 1.2rem;
+}
+
+#demo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Bold', sans-serif;
+}
+
+#demo a {
+    color: #ffcc00; /* 链接文字的颜色 */
+    text-decoration: none; /* 去掉默认下划线 */
+    font-weight: bold; /* 加粗文字 */
+    font-size: 1.2rem; /* 调整文字大小 */
+    padding: 10px 15px; /* 添加内边距 */
+    background-color: rgba(0, 0, 0, 0.7); /* 添加背景色 */
+    border-radius: 5px; /* 圆角 */
+    display: inline-block; /* 让链接支持边框和内边距 */
+    transition: all 0.3s ease; /* 添加动画过渡 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+}
+
+#demo a:hover {
+    background-color: #ffcc00; /* 鼠标悬停时改变背景色 */
+    color: #000; /* 鼠标悬停时改变文字颜色 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* 增强悬停时的阴影效果 */
+    transform: translateY(-3px); /* 鼠标悬停时轻微向上移动 */
+}
+
 #features{
     font-family: 'Regular', sans-serif;
+    color: #fff;
 }
 
 #features h2 {
@@ -175,14 +211,14 @@ header nav ul li button:hover {
 .group h3 {
     padding: 15px;
     font-family: 'Bold', sans-serif;
-    color: #ccc;
+    color: #ddd;
     font-size: 1.5rem;
 }
 
 .group p {
     padding: 15px;
     font-family: 'Regular', sans-serif;
-    color: #ccc;
+    color: #ddd;
     font-size: 1.2rem;
 }
 
